@@ -6,11 +6,12 @@ function Player() {
 
     function handleInput(){
             setName(playerName.current.value)
-            
+            playerName.current.value=''
     }
     function handleKeyPress(event){
         if(event.key==='Enter'){
             setName(playerName.current.value)
+            playerName.current.value=''
         }
         
     }
